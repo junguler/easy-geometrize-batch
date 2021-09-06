@@ -30,7 +30,7 @@ geometrize () { for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i."$1" -s
 
 ```-s``` decides number of the shapes, more is slower but makes the output image more similar to the input image
 
-```-t``` sets the modes, ```rectangle``` , ```rotated_rectangle``` , ```triangle``` , ```ellipse``` , ```rotated_ellipse``` , ```circle``` , ```line``` , ```quadratic_bezier``` , ```polyline``` . multiple choices are permitted here, just use space between them, for exampe ```-t triangle circle polyline ``` 
+```-t``` sets the modes, ```rectangle``` , ```rotated_rectangle``` , ```triangle``` , ```ellipse``` , ```rotated_ellipse``` , ```circle``` , ```line``` , ```quadratic_bezier``` , ```polyline``` . multiple choices are permitted here, just use space between them and put them quotes, for exampe ```-t "triangle circle polyline" ``` 
 default is all shapes
 
 ```-c``` sets the number of candidates each frame goes thru to choose one, default 500, higher number is slower but more accurate
