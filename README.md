@@ -22,7 +22,7 @@ there is two binaries for linux, one is built on golang, the other is built on C
 
 i'm planning on making a bash script eventually but you can use a simple bash/zsh function for the time being
 ```
-geometrize () { for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i."$1" -t "$2" -s "$3"; done; }
+geometrize () { for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i."$1" -s "$2" -t "$3"; done; }
 ```
 ```-i``` imports images, change ```*.jpg``` to other extensions as needed or ```*.*``` if everything you have in a folder is pictures
 
@@ -39,11 +39,11 @@ default is all shapes
 
 after setting that function in your ```.bashrc``` or ```.zshrc``` open the terminal in a folder with your images and do this for example:
 ```
-geometrize triangle 500
+geometrize 500 triangle 
 ```
 above example converts every image with ```.jpg``` extension in your folder with traingle shape and 500 shapes per image
 
 if you want to use more than one shape put them in quotes ""
 ```
-geometrize "triangle circle" 500
+geometrize 500 "triangle circle" 
 ```
