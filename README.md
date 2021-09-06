@@ -11,3 +11,28 @@ yes, but i'm not using windows anymore and don't know if the new binary files ar
 
 ### something went wrong, how could i fix it?
 i'll try to help if i can but my knowlege of the language is pretty limited so you are better served searching online
+
+### what about linux?
+i've uploaded a linux binaries as well, make them executable if they are not already 
+```
+chmod +x geometrize_cg++
+chmod +x geometrize_g++
+```
+there is two binaries for linux, one is built on golang, the other is built on C++, i don't know which one is better as both seem to perform the same and make the same output image
+
+i'm planning on making a bash script eventually but you can use a simple bash/zsh function for the time being
+```
+primit () { for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i."$1" -t "$2" -s "$3"; done; }
+```
+```-i``` imports images, change ```*.jpg``` to other extensions as needed or ```*.*``` if everything you have in a folder is pictures
+
+```-o``` decides output extensions, if you want to output to different folders here is where to change it, like this: ```-o ./out/g-$i."$1"``` 
+
+```-s``` decides number of the shapes, more is slower but makes the output image more similar to the input image
+
+```-t``` sets the modes, ```rectangle``` , ```rotated_rectangle``` , ```triangle``` , ```ellipse``` , ```rotated_ellipse``` , ```circle``` , ```line``` , ```quadratic_bezier``` , ```polyline``` . multiple choices are permitted here, just use space between them, for exampe ```-t triangle circle polyline ``` 
+default is all shapes
+
+```-c``` sets the number of candidates each frame goes thru to choose one, default 500, higher number is slower but more accurate
+
+```-m``` sets the number of mutates each shape goes thru, default 100, higher number is slower but more accurate
