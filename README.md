@@ -42,8 +42,3 @@ after setting that function in your ```.bashrc``` or ```.zshrc``` open the termi
 geometrize 500 triangle 
 ```
 above example converts every image with ```.jpg``` extension in your folder with traingle shape and 500 shapes per image
-
-if you want to use more than one shape put them in quotes ""
-```
-geometrize 500 "triangle circle" 
-```
