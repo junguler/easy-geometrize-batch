@@ -20,7 +20,7 @@ chmod +x geometrize_g++
 ```
 there is two binaries for linux, one is built on golang, the other is built on C++, i don't know which one is better as both seem to perform the same and make the same output image
 
-either add the binary to a folder in your ```@PATH``` or put ```./``` behind the geometrize binary in the folder it is in to let the shell know where it is, or put the absolute address to the binary like this ```~/bin/geometrize_g++```
+either add the binary to a folder in your ```@PATH``` or put ```./``` behind the geometrize binary in the folder it is in to let the shell know where it is, or put the absolute path to the binary like this ```~/bin/geometrize_g++```
 
 i'm planning on making a bash script eventually but you can use a simple bash/zsh function for the time being
 ```
