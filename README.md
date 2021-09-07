@@ -18,7 +18,7 @@ yes, but i'm not using windows anymore and don't know if the new binary files ar
 i'll try to help if i can but my knowlege of the language is pretty limited so you are better served searching online
 
 ### what about linux?
-i've uploaded linux binaries as well, make them executable if they are not already 
+i've uploaded linux binaries as well, make them executable in the terminal if they are not already 
 ```
 chmod +x geometrize_cg++
 chmod +x geometrize_g++
