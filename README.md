@@ -22,6 +22,8 @@ there is two binaries for linux, one is built on golang, the other is built on C
 
 either add the binary to a folder in your ```@PATH``` or put ```./``` behind the geometrize binary in the folder it is in to let the shell know where it is, or put the absolute path to the binary like this ```~/bin/geometrize_g++```
 
+### bash script
+
 i've included a ```geometrize.sh``` and ```geometrize_advabced.sh``` bash scripts for easy usage, these script assume you have the ```geometrize_g++``` binary in the same folder as it, if you want to put geometrize in your ```@PATH``` change ```./geometrize_g++``` to ```geometrize_g++``` in the script and put the script in ```@PATH``` aswell and omit ```./``` in terminal
 
 make it executable:
@@ -34,6 +36,7 @@ in your terminal do:
 ./geometrize.sh
 geometrize.sh
 ```
+### bash/zsh function
 
 if you don't need a script there is also a bash/zsh function and for loop as well, read them below:
 ```
@@ -58,7 +61,7 @@ geometrize 500 triangle
 ```
 above example converts every image with ```.jpg``` extension in your folder with traingle shape and 500 shapes per image
 
-
+### for loop
 
 you can also do all of this in the terminal without making a function:
 ```
