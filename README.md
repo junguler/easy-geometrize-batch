@@ -22,7 +22,19 @@ there is two binaries for linux, one is built on golang, the other is built on C
 
 either add the binary to a folder in your ```@PATH``` or put ```./``` behind the geometrize binary in the folder it is in to let the shell know where it is, or put the absolute path to the binary like this ```~/bin/geometrize_g++```
 
-i'm planning on making a bash script eventually but you can use a simple bash/zsh function for the time being
+i've included a ```geometrize.sh``` and ```geometrize_advabced.sh``` bash scripts for easy usage, these script assume you have the ```geometrize_g++``` binary in the same folder as it, if you want to put primitive in your ```@PATH``` change ```./geometrize_g++``` to ```geometrize_g++``` in the script and put the script in ```@PATH``` aswell and omit ```./``` in terminal
+
+make it executable
+```
+chmod +x primitive.sh
+```
+in your terminal do:
+```
+./primitive.sh
+primitive.sh
+```
+
+if you don't need a script there is also a bash/zsh function and for loop as well, read them below:
 ```
 geometrize () { for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i."$1" -s "$2" -t "$3"; done; }
 ```
