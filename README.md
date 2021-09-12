@@ -70,6 +70,6 @@ above example converts every image with `.jpg` extension in your folder with tra
 
 you can also do all of this in the terminal without making a function:
 ```
-for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i."png" -s "500" -t "triangle circle"; done
+for i in *.jpg; do echo $i; geometrize_g++ -i $i -o g-$i.png -s 500 -t "triangle circle"; done
 ```
-if you don't want to change output extension remove `."png"` part and just do `-o g-$i`
+if you don't want to change output extension remove `.png` part and just do `-o g-$i`
