@@ -62,9 +62,9 @@ default is all shapes
 
 after setting that function in your `.bashrc` or `.zshrc` open the terminal in a folder with your images and do this for example:
 ```
-geometrize 500 triangle 
+geometrize png 500 triangle 
 ```
-above example converts every image with `.jpg` extension in your folder with traingle shape and 500 shapes per image
+above example converts every image with `.jpg` extension in your folder with traingle shape and 500 shapes per image and `png` extension
 
 ### for loop
 
