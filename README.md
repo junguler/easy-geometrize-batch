@@ -1,4 +1,6 @@
 ## bat files for easy batch converting images with geometrize minimal library
+click on the animated gif below to go to my repo that shows some examples of you images can look
+[![G_banner](https://user-images.githubusercontent.com/59083599/135176240-8a1688e9-c8a5-4635-a932-71a5ab97332b.gif)](https://github.com/junguler/_image-manipulation/tree/main/Geometrize)
 
 ### what is it and why should i care?
 it's simple and dirty bat files i made for someone who needed to batch convert some of their images using [geometrize-library](https://github.com/Tw1ddle/geometrize-lib-example)
